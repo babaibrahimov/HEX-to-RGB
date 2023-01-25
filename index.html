@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX&RGB converter | Baba Ibrahimov</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hex-area">
+            <label for="HEX" class="hex-label">hex</label>
+            <input type="text" class="hex-input" id="hex-input" placeholder="#ffffff" oninput="toRgb()">
+            <i class="ri-file-copy-line" id="hex-copy"></i>
+        </div>
+        <div class="rgb-area">
+            <label for="RGB" class="rgb-label">rgb</label>
+            <input type="text" class="rgb-input" id="rgb-input" placeholder="rgb(255, 255, 255)" oninput="toHex()" >
+            <i class="ri-file-copy-line" id="rgb-copy"></i>
+        </div>
+    </div>
+
+    
+    <p class="copyright">created by <a href="https://www.babaibrahimov.com" target="_blank">Baba Ibrahimov</a></p>
+    <script src="./script.js"></script>
+</body>
+</html>
